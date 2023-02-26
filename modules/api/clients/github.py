@@ -2,6 +2,13 @@ import requests
 
 
 class GitHub:
+    def get_user(self, username):
+        r = requests.get(f'https://api.github.com/users/{username}')
+        body = r.json()
+
+        return body
+
+# class GitHub:
 
     def get_user_defunkt(self):
         r = requests.get('https://api.github.com/users/defunkt')
@@ -11,6 +18,6 @@ class GitHub:
 
     def get_non_exist_user(self):
         r = requests.get('https://api.github.com/users/butenkosergii')
-        body = r.jason()
+        body = r.json()
 
         return body
