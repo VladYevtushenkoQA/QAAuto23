@@ -27,7 +27,7 @@ def test_check_incorrect_username():
     # Вводимо неправильний пароль
     pass_elem.send_keys('wrong password')
 
-    # Знаходимо кнопку sing in
+    # Знаходимо кнопку sing in 
     btn_elem = driver.find_element(By.NAME, 'commit')
 
     # Емулюємо клік лівою кнопкою мишки
