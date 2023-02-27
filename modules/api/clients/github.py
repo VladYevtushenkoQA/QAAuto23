@@ -26,7 +26,7 @@ class GitHub:
         return body
 
     def get_non_exist_user(self):
-        r = requests.get('https://api.github.com/users/butenkosergii')
+        r = requests.get('https://api.github.com/users/')
         body = r.json()
 
         return body
