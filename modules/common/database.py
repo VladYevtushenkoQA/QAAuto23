@@ -44,7 +44,7 @@ class Database():
         self.connection.commit()
 
     def delete_product_by_id(self, product_id):
-        query = f"DELETE FROM products WHERE id = {product_id}"
+        query = f"DELETE FROM products WHERE id = {product_id}" 
         self.cursor.execute(query)
         self.connection.commit()
 
