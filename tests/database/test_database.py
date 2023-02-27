@@ -60,7 +60,7 @@ def test_detailed_orders():
     db = Database()
     orders = db.get_detailed_orders()
     print("Замовлення", orders)
-    # Check quantity of orders equal to 1
+    # Check quantity of orders equal to 1 
     assert len(orders) == 1
 
     # Check structure of data
