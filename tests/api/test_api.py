@@ -1,10 +1,3 @@
-# def test_check_math():
-    # assert 7*7 == 49
-
-
-# def test_check_78():
-    # assert 7*8 == 56
-
 import pytest
 
 
@@ -22,3 +15,10 @@ def test_name(user):
 @pytest.mark.check
 def test_second_name(user):
     assert user.second_name == ''
+
+# def test_check_math():
+    # assert 7*7 == 49
+
+
+# def test_check_78():
+    # assert 7*8 == 56
